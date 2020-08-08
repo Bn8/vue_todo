@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <MainContainer msg="This is me a mario" name="boo!"  />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainContainer from './components/MainContainer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainContainer
   }
 }
 </script>
@@ -24,5 +24,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+body {
+  background-color: #222;
 }
 </style>
