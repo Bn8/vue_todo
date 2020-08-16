@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <MainContainer msg="This is me a mario" name="boo!"  />
   </div>
 </template>
