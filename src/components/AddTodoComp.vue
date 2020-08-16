@@ -1,12 +1,34 @@
 
 <template>
   <div>
+
+<div class="form-group ">
+  <!-- <label class="form-control-label " for="addTextbox">Add Todo</label> -->
+<!-- <br /> -->
+
+  <div class="input-group add-wrapper " >
+    <button type="button" @click="onAdd" 
+      class="btn btn-outline-success addnew fa fa-plus" ></button>
+    <div class="col-8">
+      <input type="text" placeholder="add todo.." class="form-control" id="addTextbox"
+        autofocus 
+        v-model="todoText"
+        v-on:keyup.enter="onAdd" 
+      >
+    </div>
+  </div>
+  
+</div>
+
+<!-- 
     <button v-show="false" class="tstbtn warning" v-on:click="count++">Click count: {{ count }}</button>
-    <button class="addnew icon-paper-plane" @click="onAdd">+</button>
-    <input type="text" placeholder="add todo.." autofocus 
-      v-model="todoText"
-      v-on:keyup.enter="onAdd" 
-    />
+    <div class="add-wrapper">
+      <button class="addnew fa fa-plus" @click="onAdd"></button>
+      <input type="text" placeholder="add todo.." autofocus 
+        v-model="todoText"
+        v-on:keyup.enter="onAdd" 
+      />
+    </div> -->
   </div>
 </template>
 
@@ -34,8 +56,15 @@ export default {
 <!------------------------------------------------------------------------------------------->
 
 <style scoped>
-input {
+.btn {
+  /* necesary for some reason bootstrap changes it so it offset slightly */
+  font-size: 1rem; 
+}
+/* input {
   width: auto;
   color: black;
 }
+.addnew {
+  height:36px;
+} */
 </style>
