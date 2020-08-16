@@ -66,7 +66,9 @@ export default {
 <style>
 .touched-element {
   background-color: #3f3f3f;
-  border-left: 1px solid #254996;
+  border-left: 5px solid #254996;
+  /* this is a "hack" so the text wont move because of the border increase in size */
+  padding-left: 16px;
 }
 .swiping-element {
   background-color: blueviolet;
